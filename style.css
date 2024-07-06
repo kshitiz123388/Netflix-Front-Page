@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.header{
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/header-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding: 10px 8%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001 ;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn{
+    color: white;
+    display: inline-flex;
+    background: transparent;
+    align-items: center;
+    border: 1px solid white;
+    padding:7px 10px;
+    border-radius: 4px;
+}
+
+.language-btn  img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-size: 39.5px;
+    line-height: 70px;
+    font-weight: 900;
+    max-width: 900px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-form
+{
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    
+}
+
+.email-form input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-form button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+hr{
+    background-color: rgb(252, 46, 46);
+    height: 5px;
+    border: none;
+}
+
+/* ---features--- */
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.text-colm{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-colm{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-colm img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+    
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+.faq .email-form{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+footer{
+    height: 400px;
+    width: 100%;
+    padding:5%;
+}
+
+.footer-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer p{
+    margin-left: 172px;
+    margin-bottom: 20px;
+}
+
+.footer-colm{
+    color: white;
+}
+
+footer p a{
+    color: white;
+}
+
+
+.footer-colm ul li{
+    font-size: 13px;
+    margin: 15px 0;
+    list-style: none;
+    text-align: start;
+}
+
+.footer-colm ul li a{
+    font-size: 13px;
+    font-weight: 100;
+    color: white;
+}
